@@ -1,0 +1,5 @@
+classes= 8
+train  = /home/zectre/Documents/RoadDamageDataset/ImageSets/Main/train.txt
+valid  = /home/zectre/Documents/RoadDamageDataset/ImageSets/Main/val.txt
+names = /home/zectre/Documents/TA/voc.names
+backup = backup
