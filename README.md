@@ -33,4 +33,5 @@ Install darknet from this repository
 1. Get location data from subtitle using OCR
 >sudo apt install tesseract
 
+2. Edit file location on script/procc.sh then run
 >./script/procc.sh
