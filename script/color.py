@@ -17,7 +17,7 @@ def level(img):
             copy.putpixel((x, y), tuple(pxl))
     return copy
 
-for png_file in glob('./selected/*jpg'):
+for png_file in glob('./output/*_cropped.png'):
     image = Image.open(png_file)
     leveled = level(image)
-    leveled.save(png_file.replace('.jpg', '_leveled.png'))
+    leveled.save(png_file.replace('_cropped.png', '_leveled.png'))
