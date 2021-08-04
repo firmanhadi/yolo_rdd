@@ -15,7 +15,7 @@ while getopts ":bt" o; do
             ls *.png > file.txt
             sed 's/_leveled.png/.png/g' file.txt > filename.txt
             paste filename.txt wew.txt  > /content/yolo_rdd/tesseractresult.txt
-            rmdir /content/yolo_rdd/output/bw
+            rm -rf /content/yolo_rdd/output/bw
             ;;
         t)
             python ./script/cuttop.py
@@ -30,7 +30,7 @@ while getopts ":bt" o; do
             ls *.png > file.txt
             sed 's/_leveled.png/.png/g' file.txt > filename.txt
             paste filename.txt wew.txt  > /content/yolo_rdd/tesseractresult.txt
-            rmdir /content/yolo_rdd/output/bw
+            rm -rf /content/yolo_rdd/output/bw
             ;;
         *)
             echo 'wrong command, use -b for bottom and -t for top'
